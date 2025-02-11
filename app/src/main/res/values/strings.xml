@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WeatherDialog</string>
+    <string-array
+        name="cities">
+        <item>Shelekhov</item>
+        <item>Irkutsk</item>
+        <item>Angarsk</item>
+    </string-array>
+</resources>
