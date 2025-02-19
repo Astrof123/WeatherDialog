@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">WeatherDialog</string>
+    <string name="buttonName">Choose city</string>
+    <string name="messageText">Choose city:</string>
+    <string name="changeLangText">Change language:</string>
     <string-array
         name="cities">
         <item>Shelekhov</item>

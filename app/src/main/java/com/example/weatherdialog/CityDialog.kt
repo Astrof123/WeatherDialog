@@ -13,7 +13,7 @@ class CityDialog(val ctx: Context): DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         var choice = 0
         return ctx.let { AlertDialog.Builder(it).
-            setTitle("Выберите город:").
+            setTitle(R.string.messageText).
             setSingleChoiceItems(ctx.resources.getStringArray(R.array.cities),
                 0, activity as DialogInterface.OnClickListener).
             setPositiveButton("Ok",  activity as DialogInterface.OnClickListener).

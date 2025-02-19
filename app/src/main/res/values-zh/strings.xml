@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">天氣對話</string>
+    <string name="buttonName">上傳年份</string>
+    <string name="messageText">讀者群:</string>
+    <string name="changeLangText">更改語言:</string>
+    <string-array
+        name="cities">
+        <item>舍列霍夫</item>
+        <item>伊爾庫茨克</item>
+        <item>安加爾斯克</item>
+
+    </string-array>
+</resources>
