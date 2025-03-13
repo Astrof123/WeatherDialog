@@ -15,7 +15,6 @@ import java.util.Locale
 import android.os.LocaleList
 import android.view.Menu
 import android.view.MenuItem
-import android.view.ContextThemeWrapper
 
 
 @SuppressLint("NewApi")
@@ -92,10 +91,27 @@ class MainActivity : AppCompatActivity(), DialogInterface.OnClickListener {
 
     override fun onClick(dialog: DialogInterface?, which: Int) {
         if (which == DialogInterface.BUTTON_POSITIVE) {
+            val bundle = Bundle()
+
             when (currentFragment){
-                0 -> showFragment(ShelehovFragment());
-                1 -> showFragment(IrkutskFragment());
-                2 -> showFragment(AngarskFragment());
+                0 -> {
+                    bundle.putString("city", "Shelekhov")
+                    val shelekhov = WeatherFragment()
+                    shelekhov.arguments = bundle
+                    showFragment(shelekhov);
+                }
+                1 -> {
+                    bundle.putString("city", "Irkutsk")
+                    val irkutsk = WeatherFragment()
+                    irkutsk.arguments = bundle
+                    showFragment(irkutsk);
+                };
+                2 -> {
+                    bundle.putString("city", "Angarsk")
+                    val angarsk = WeatherFragment()
+                    angarsk.arguments = bundle
+                    showFragment(angarsk);
+                };
             }
         }
 
